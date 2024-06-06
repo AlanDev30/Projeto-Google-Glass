@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Poppins';
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+}
+
+div#interface {
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px 10px 10px 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+header#header img#icone {
+    position: absolute;
+    left: 934px;
+    top: 70px;
+}
+
+header#header {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#header h1 {
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 2px 2px 2px #8d8888;
+    padding: 0px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+header#header h2 {
+    font-family: Arial, sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
+}
+/* Formatação de imagens com legendas */
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+/* Formatação do Menu */
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -15px;
+    left: 376px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    transition: background-color 1s;
+    
+}
+
+nav#menu li:hover {
+    background-color: #686565;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 4px;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a:hover {
+    color: white;
+}
+
+section#body {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 20px;
+}
+
+article#main-news h2 {
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 6px;
+}
+
+header#article-header h1 {
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.right {
+    text-align: right;
+    font-size: 4pt;
+    margin-bottom: 0px;
+}
+
+.style {
+    margin-bottom: 0px;
+}
+
+header#article-header h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#article-header h3.right {
+    font-size: 9pt;
+    color: #606060;
+}
+
+header#article-header h3 {
+    font-size: 12pt;
+    color: #606060;
+}
+
+table#tablespec {
+    border: 1px solid #000000;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tablespec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+table#tablespec caption span {
+    display:block;
+    float: right;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+table#tablespec td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+}
+table#tablespec td#tablecm {
+    text-align: right;
+}
+
+table#tablespec td#table2 {
+    text-align: right;
+}
+
+table#tablespec td.backcolor {
+    color: #ffffff;
+    font-weight: bold;
+    background: #606060;
+}
+
+table#tablespec td.backcolor2 {
+    font-weight: 550;
+    background: #d1d1d1;
+}
+
+aside#side {
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+aside#side h1 {
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin: 0px;
+}
+
+aside#side h2 {
+    margin-top: 0px;
+    font-size: 13pt;
+    background-color: #606060;
+    color: #ffffff;
+    border-radius: 7px;
+    padding: 2px 0px 2px 5px;
+    margin-bottom: 0px;
+}
+
+video#film01 {
+    display: block;
+    position: relative;
+    width: 500px;
+    margin: 10px 10px 10px 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+}
+
+video#film02 {
+    display: block;
+    position: relative;
+    width: 351px;
+    margin: 5px 5px 5px 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+}
+
+footer#baseboard {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#baseboard p {
+    text-align: center;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="_css/form.css">
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <div id="interface">
+        <header id="header">
+            <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" src="_imagens/contato.png" alt="">
+            <nav id="menu">
+            <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li
+                        onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"
+                    >
+                        <a href="specs.html">Especificações</a>
+                    </li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')">
+                        <a href="fotos.html">Fotos</a>
+                    </li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')">
+                        <a href="multimidia.html">Multimídia</a>
+                    </li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')">
+                        <a href="fale-conosco.html">Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="body-full">
+            <article id="main-news">
+                <header id="article-header">
+                    <hgroup>
+                        <h3 class="style">Fale Conosco > Contato</h3>
+                        <h1>Formulário de Contato</h1>
+                        <h2>por Alan Vitor</h2>
+                        <h3 class="right">Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+                </header>
+            </article>
+        </section>
+        <form method="post" id="fContato" action="mailto:alanvitorassis4@gmail.com" oninput="calc_total()">
+            <fieldset id="user">
+                <legend>Identificação do Usuário</legend>
+                <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
+                <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="15" maxlength="15" placeholder="Digite Sua Senha"></p>
+                <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="Digite Seu Email"></p>
+                <fieldset id="sex">
+                <legend>Sexo:</legend>
+                    <input type="radio" name="tSexo" id="cMasc" checked><label for="cMasc">Masculino</label>
+                    <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+                </fieldset>
+            <p><label for="cNasc">Data de Nascimento:</label> <input type="date" name="tNasc" id="cNasc"></p>
+
+            </fieldset>
+            <fieldset id="address">
+                <legend>Endereço do Usuário</legend>
+                <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="20" maxlength="80" placeholder="Rua, Avenida, Travessa"></p>
+                <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" min="0" max="9999" placeholder="Número"></p>
+                <p><label for="cEst">Estado:</label>
+                    <select name="tEst" id="cEst">
+                    <option>Alagoas</option>
+                    <option>Acre</option>
+                    <option>Amapá</option>
+                    <option>Amazonas</option>
+                    <option>Bahia</option>
+                    <option>Ceará</option>
+                    <option>Distrito Federal</option>
+                    <option>Espírito Santo</option>
+                    <option>Goiáis</option>
+                    <option>Minas Gerais</option>
+                    <option>Maranhão</option>
+                    <option>Mato Grosso</option>
+                    <option>Mato Grosso do Sul</option>
+                    <option>Pará</option>
+                    <option>Paraíba</option>
+                    <option>Pernambuco</option>
+                    <option>Piauí</option>
+                    <option>Paraná</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Rondônia</option>
+                    <option>Roraima</option>
+                    <option>Rio Grando do Sul</option>
+                    <option>Rio Grando do Norte</option>
+                    <option>Santa Catarina</option>
+                    <option>Sergipe</option>
+                    <option>São Paulo</option>
+                    <option>Tocantis</option>
+                </select></p>
+                <p><label for="cCid">Cidade:</label> <input type="text" name="tCid" id="cCid" placeholder="Digite Sua Cidade"></p>
+            </fieldset>
+            <fieldset id="message">
+                <legend>Mensagem do Usuário</legend>
+                <p><label for="cUrg">Grau de Urgência:</label> Míni<input type="range" name="tUrg" id="cUrg" min="0" max="10">Máx</p>
+                <p><label for="cMsg">Mensagem:</label>
+                <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe Aqui sua Menssagem"></textarea>
+                </p>
+            </fieldset>
+            <fieldset id="order">
+                <legend>Quero um Google Glass</legend>
+                <p>
+                    <input type="checkbox" name="tPed" id="cPed" checked>
+                    <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label>
+                </p>
+                <p>
+                    <label for="cCor">Cor:</label>
+                    <input type="color" name="tCor" id="cCor" value="#0000ff">
+                </p>
+                <p>
+                    <label for="cQtd">Quantidade:</label>
+                    <input type="number" name="tQtd" id="cQtd" min="0" max="5">
+                </p>
+                <p>
+                    <label for="cTot">Preço Total: R$</label>
+                    <input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly>
+                </p>
+            </fieldset>
+        
+            <button id="button-enviar">
+                <input type="submit" name="button" id="button-enviar01">
+            </button>
+            
+        </form>
+<footer id="baseboard">
+    <p>
+        Copyright 2013 - by Alan Vitor Assis<br />
+        Facebook | Twitter
+    </p>
+</footer>
+</div>
+
+<script src="./_javascript/funcoes.js"></script>
+<script src="./_javascript/contato.js"></script>
+</body>
+</html>
+
